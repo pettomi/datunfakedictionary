@@ -1,0 +1,54 @@
+{ datun_dictionary :
+	entities : [
+		"Order Item": {
+			"CREATED_BY": "date",
+			"ROW_ID": "integer",
+			"ACTION_CD": {
+				type : "string",
+				values : ["Suspend", "Active", "Stopped"]
+			},
+			"SHIP_COMPLETE_FLG": true,
+		}
+	]
+	
+	"operators": {
+		"integer": [
+		  "$equal",
+		  "$gt"
+		],
+		"text": [
+		  "$equal",
+		  "$like",
+		  "$in",
+		]
+		"boolean" : [
+		  "$equal"
+		]
+	}
+	
+	"operator_description" : {
+		"$equal" : 
+			{
+				"description" : "description of the operation",
+				"singular" : true,
+				"label" : "equals",
+			}
+		"$gt" : {
+				"description" : "description of the operation",
+				"singular" : true,
+				"label" : "greater than",
+		}
+		"$like" : {
+				"description" : "like operator",
+				"singular" : true,
+				"label" : "like",
+		}
+		
+		"$in" : {
+			"description" : "field value is in a predefined list",
+			"singular" : false,
+			"label" : "select",
+		}
+  }
+
+}

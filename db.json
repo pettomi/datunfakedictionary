@@ -1,4 +1,4 @@
-{ "datun_dictionary" :
+{ "datun_dictionary" : {
 	"entities" : [
 		"Order Item": {
 			"CREATED_BY": "date",
@@ -49,6 +49,6 @@
 			"singular" : false,
 			"label" : "select",
 		}
-  }
-
+  	}
+}
 }

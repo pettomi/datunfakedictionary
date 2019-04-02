@@ -1,11 +1,11 @@
-{ datun_dictionary :
-	entities : [
+{ "datun_dictionary" :
+	"entities" : [
 		"Order Item": {
 			"CREATED_BY": "date",
 			"ROW_ID": "integer",
 			"ACTION_CD": {
-				type : "string",
-				values : ["Suspend", "Active", "Stopped"]
+				"type" : "string",
+				"values" : ["Suspend", "Active", "Stopped"]
 			},
 			"SHIP_COMPLETE_FLG": true,
 		}

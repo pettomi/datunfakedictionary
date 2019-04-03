@@ -3,7 +3,13 @@
     "entities": [
       {
         "name": "Order Item",
-        "fields": {
+        "fields": [
+          "CREATED_BY",
+          "ROW_ID",
+          "ACTION_CD",
+          "SHIP_COMPLETE_FLG"
+        ],
+        "types": {
           "CREATED_BY": "date",
           "ROW_ID": "integer",
           "ACTION_CD": {
@@ -19,7 +25,13 @@
       },
       {
         "name": "Order Item OM",
-        "fields": {
+        "fields": [
+          "SERVICE_START_DT",
+          "CHG_ORD_COST_CD",
+          "MODIFICATION_NUM",
+          "PREV_ASSET_STAT_CD"
+        ],
+        "types": {
           "SERVICE_START_DT": "date",
           "CHG_ORD_COST_CD": "string",
           "MODIFICATION_NUM": "integer",

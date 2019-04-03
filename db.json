@@ -2,7 +2,8 @@
   "datun_dictionary": {
     "entities": [
       {
-        "Order Item": {
+        "name": "Order Item",
+        "fields": {
           "CREATED_BY": "date",
           "ROW_ID": "integer",
           "ACTION_CD": {
@@ -17,7 +18,8 @@
         }
       },
       {
-        "Order Item OM": {
+        "name": "Order Item OM",
+        "fields": {
           "SERVICE_START_DT": "date",
           "CHG_ORD_COST_CD": "string",
           "MODIFICATION_NUM": "integer",

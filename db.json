@@ -57,6 +57,11 @@
       ],
       "boolean": [
         "$equal"
+      ],
+      "date": [
+        "$equal",
+        "$gt",
+        "$lt"
       ]
     },
     "operator_description": {

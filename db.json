@@ -20,7 +20,7 @@
               "Stopped"
             ]
           },
-          "SHIP_COMPLETE_FLG": true
+          "SHIP_COMPLETE_FLG": "boolean"
         }
       },
       {

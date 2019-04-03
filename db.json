@@ -13,7 +13,7 @@
           "CREATED_BY": "date",
           "ROW_ID": "integer",
           "ACTION_CD": {
-            "type": "string",
+            "type": "text",
             "values": [
               "Suspend",
               "Active",
@@ -33,7 +33,7 @@
         ],
         "types": {
           "SERVICE_START_DT": "date",
-          "CHG_ORD_COST_CD": "string",
+          "CHG_ORD_COST_CD": "text",
           "MODIFICATION_NUM": "integer",
           "PREV_ASSET_STAT_CD": {
             "type": "string",

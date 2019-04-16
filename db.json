@@ -1,89 +1,83 @@
 {
-  "datun_dictionary": {
-    "entities": [
-      {
-        "name": "Order Item",
-        "fields": [
-          "CREATED_BY",
-          "ROW_ID",
-          "ACTION_CD",
-          "SHIP_COMPLETE_FLG"
-        ],
-        "types": {
-          "CREATED_BY": "date",
-          "ROW_ID": "integer",
-          "ACTION_CD": {
-            "type": "text",
-            "values": [
-              "Suspend",
-              "Active",
-              "Stopped"
-            ]
-          },
-          "SHIP_COMPLETE_FLG": "boolean"
-        }
-      },
-      {
-        "name": "Order Item OM",
-        "fields": [
-          "SERVICE_START_DT",
-          "CHG_ORD_COST_CD",
-          "MODIFICATION_NUM",
-          "PREV_ASSET_STAT_CD"
-        ],
-        "types": {
-          "SERVICE_START_DT": "date",
-          "CHG_ORD_COST_CD": "text",
-          "MODIFICATION_NUM": "integer",
-          "PREV_ASSET_STAT_CD": {
-            "type": "string",
-            "values": [
-              "Active",
-              "Disabled"
-            ]
-          }
-        }
-      }
-    ],
-    "operators": {
+  "meta": {
+    "allowed_operators": {
       "integer": [
-        "$equal",
+        "$eq",
         "$gt"
       ],
       "text": [
-        "$equal",
+        "$eq",
         "$like",
         "$in"
       ],
       "boolean": [
-        "$equal"
+        "$eq"
       ],
       "date": [
-        "$equal",
+        "$eq",
         "$gt",
         "$lt"
       ]
     },
-    "operator_description": {
-      "$equal": {
+    "operator_ui": {
+      "$eq": {
         "description": "description of the operation",
-        "singular": true,
         "label": "equals"
       },
       "$gt": {
         "description": "description of the operation",
-        "singular": true,
         "label": "greater than"
       },
       "$like": {
         "description": "like operator",
-        "singular": true,
         "label": "like"
       },
       "$in": {
         "description": "field value is in a predefined list",
-        "singular": false,
+        "multiple": true,
         "label": "select"
+      }
+    }
+  },
+  "data": {
+    "Order": {
+      "CREATED_BY": {
+        "type": "date",
+        "format": ""
+      },
+      "ROW_ID": {
+        "type": "integer",
+        "format": ""
+      },
+      "ACTION_CD": {
+        "type": "string",
+        "format": "",
+        "values": [
+          "Suspend",
+          "Active",
+          "Stopped"
+        ]
+      },
+      "SHIP_COMPLETE_FLG": {
+        "type": "boolean"
+      }
+    },
+    "Account": {
+      "SERVICE_START_DT": {
+        "type": "date"
+      },
+      "CHG_ORD_COST_CD": {
+        "type": "string"
+      },
+      "MODIFICATION_NUM": {
+        "type": "integer"
+      },
+      "PREV_ASSET_STAT_CD": {
+        "type": "string",
+        "values": [
+          "Active",
+          "Disabled"
+        ]
       }
     }
   }

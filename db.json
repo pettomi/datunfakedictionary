@@ -1,4 +1,4 @@
-{ dictionary_response : {
+{ "dictionary_response" : {
   "meta": {
     "allowed_operators": {
       "integer": [
